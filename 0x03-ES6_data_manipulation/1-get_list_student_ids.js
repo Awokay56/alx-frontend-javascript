@@ -1,6 +1,9 @@
-import getListStudents from "./0-get_list_students"
-
-export default getListStudentIds()
+export default function getListStudentIds(id)
 {
-    
-}
+    if (Array.isArray(id) == false) {
+        return [];
+    } else {
+        return (id.map((ids) => ids.id))
+        
+    }
+};
